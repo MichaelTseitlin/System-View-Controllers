@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="System_View_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-kB-drz">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="wdm-ZU-mUW">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="353"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="YHf-65-xCN">
+                                        <rect key="frame" x="0.0" y="425" width="374" height="353"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGQ-nX-4mq">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="55.5"/>
+                                                <state key="normal" title="Share"/>
+                                                <connections>
+                                                    <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpC-Es-Jkr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBw-hf-vIs">
+                                                <rect key="frame" x="0.0" y="74.5" width="374" height="55.5"/>
+                                                <state key="normal" title="Safari"/>
+                                                <connections>
+                                                    <action selector="safariTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKa-vb-fmc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acr-Cp-4BI">
+                                                <rect key="frame" x="0.0" y="149" width="374" height="55"/>
+                                                <state key="normal" title="Camera"/>
+                                                <connections>
+                                                    <action selector="cameraTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KV6-HS-y2F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKD-zc-wX1">
+                                                <rect key="frame" x="0.0" y="223" width="374" height="55.5"/>
+                                                <state key="normal" title="Email"/>
+                                                <connections>
+                                                    <action selector="emailTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pww-Wm-nEz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6w-YS-fvo">
+                                                <rect key="frame" x="0.0" y="297.5" width="374" height="55.5"/>
+                                                <state key="normal" title="Message"/>
+                                                <connections>
+                                                    <action selector="messageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYf-2N-blH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Fa-kB-drz" secondAttribute="trailing" constant="20" id="54J-Xb-Y0o"/>
+                            <constraint firstItem="4Fa-kB-drz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ACp-sg-BEX"/>
+                            <constraint firstItem="4Fa-kB-drz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AtI-a7-WgD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fa-kB-drz" secondAttribute="bottom" constant="20" id="CyC-PY-she"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="wdm-ZU-mUW" id="gH0-2h-eqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="picture" width="800" height="563"/>
+    </resources>
+</document>
